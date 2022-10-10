@@ -1,13 +1,10 @@
 {
   "name": "node-red-contrib-semaphore",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A Node-RED node for semaphores.",
-  "dependencies": {
-    "semaphore": "1.x"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/teastman/node-red-contrib-semaphore"
+    "url": "https://github.com/r-renato/node-red-contrib-semaphore"
   },
   "license": "Apache",
   "keywords": [
@@ -28,5 +25,18 @@
       "name": "teastman",
       "email": "tyler.eastman@gmail.com"
     }
-  ]
+  ],
+  "dependencies": {
+    "semaphore": "1.x"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^16.11.12",
+    "@types/node-red": "^1.2.0",
+    "@types/node-red-node-test-helper": "^0.2.2",
+    "@types/semaphore": "^1.1.1"
+  },
+  "scripts": {
+    "build" : "tsc -p tsconfig.json"
+  }
 }

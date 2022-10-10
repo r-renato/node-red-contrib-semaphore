@@ -1,6 +1,7 @@
 {
   "config": {
     "capacity": "Capacity",
+    "timeout": "Timeout",
     "name": "Name"
   },
   "semaphore": {
